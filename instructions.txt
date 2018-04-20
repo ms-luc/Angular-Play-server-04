@@ -1,0 +1,38 @@
+CPS847: Assignment 3
+Created on: April 2, 2018
+Assignment due date: April 15, 2017, 11:59 pm
+                           
+MyCompany Inc. is an IT consulting company in downtown Toronto and is looking for a team that can design, build and implement a modern website for them. You are hired as the software freelance team and your task is to deliver a website that provides the following functions:
+[50% of the mark] As part of the process, you are going to create a prototype using Angular containing the following info:
+[10%] Show current date and time (updated on page refresh), formatted as “2018-01-20 14:01:59”
+Use Angular DatePipe component
+[20%] Show current Toronto’s temperature using Weather Underground API
+Leverage HTTP Services for this item
+[10%] Menus or sections (your choice! )  for the following items
+About Us
+Our Services
+Our Customers
+[10%] Deploy the code on the scs VM (see details below)
+Please write a few lines (e.g., “This is About Us section text”) under each section as sample text that will appear on that section
+[50% of the mark] As part of the web-site creation, you will also need to create polling app using Django. You can use default SQLite backend.  Start with the tutorial covered in class and create objects Question and Choice as per this tutorial [10%]. Generate SQL statements needed to create these objects (original SQL script) [10%]. Then add an additional attribute “owner” to Question [10%] and produce SQL statements needed to migrate database schema (migration script) [15%]. Hint: use  “python manage.py sqlmigrate”.  Deploy [10%] the code on the scs VM (see details below).
+
+Deployment instructions:
+Start VMWare Horizon Client, installed on the the SCS lab machines. Based on IT department recommendation, I would suggest to start the Client on the Windows OS rather than Ubuntu OS.  In the client, start a virtual machine (VM) from the CPS847-Exam. This action will assign a VM to you. The VM is dedicated to you. Note that git, NodeJS, Angular, and Django are already preinstalled for your convenience. 
+
+Please do not turn off the VM, rather log out of your session, if needed.  The VM will start again after turning it off, but it will take a few minutes (during which you will get connection-related error messages). 
+Determine the IP address of your VM (e.g., using ifconfig command), so that you can ssh to this machine via the moon servers.
+Once your code is ready — deploy it to the VM. I find that the fastest option is using git clone, but you can choose a different route (e.g., archiving your sources and SFTPing them to the VM). You can also do the development right on the VM.
+SSH to your VM and create a persistent terminal session using screen software (if you have not used screen before — take a look at this brief tutorial https://www.mattcutts.com/blog/a-quick-tutorial-on-screen/). Start your Angular server in this screen session.
+Start another screen session and start your Django app there.
+Leave both sessions running, so that TAs can validate your deployments.
+
+Deliverables:
+Create private (to hide your API keys from hackers) GitHub repo and invite ssbattousai, cps847-chang, and avm-ru-cs users to your github repository (containing all of your code). 
+Submit to D2L submission folder URL of your github repo.
+In the readme of your github repo, 
+Specify where Angular project source code resides
+Specify where Django source code resides
+Provide direct links to the two SQL scripts (the original and the migration ones)
+Provide URL of your Angular app (based on the deployment instructions)
+Provide URL of your Django app (based on the deployment instructions)
+
