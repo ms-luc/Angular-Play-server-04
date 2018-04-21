@@ -1,0 +1,5 @@
+ng new angular-play
+
+ng serve --host 0.0.0.0
+
+mkdir src/app/components
